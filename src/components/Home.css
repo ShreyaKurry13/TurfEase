@@ -1,0 +1,32 @@
+.custom-carousel {
+    max-height: 400px;
+    overflow: hidden;
+  }
+  
+  .carousel-image {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    .custom-carousel {
+      max-height: 300px;
+    }
+  
+    .carousel-image {
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .custom-carousel {
+      max-height: 200px;
+    }
+  
+    .carousel-image {
+      height: 200px;
+    }
+  }
+  

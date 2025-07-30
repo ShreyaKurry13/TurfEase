@@ -1,0 +1,11 @@
+/* Optional custom styling */
+
+.navbar {
+    height: 80px;
+  }
+  
+  /* Optional spacing or custom styles */
+  .navbar-nav .nav-link {
+    margin-left: 15px;
+  }
+  
