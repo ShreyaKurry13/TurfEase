@@ -36,16 +36,12 @@ export default function About() {
                 online. Our clean and responsive interface ensures a smooth
                 experience whether you're using a mobile, tablet, or desktop. We
                 empower turf owners with tools to manage bookings, update turf
-                details, and monitor payments in real time. From casual evening
-                games to organized tournaments, we help you find the perfect
-                ground effortlessly. With secure online payments, real-time
+                details, and monitor payments in real time. With secure online payments, real-time
                 confirmations, and easy cancellations, we keep it simple and
                 safe. Our contact form allows players and turf managers to
                 connect for special bookings or support queries. Built using
                 React.js, Spring Boot, and MySQL, TurfZone is a modern solution
-                for a modern sports community. We believe in promoting active
-                lifestyles by connecting people to play, compete, and thrive
-                together.
+                for a modern sports community. 
               </p>
             </div>
           </div>
