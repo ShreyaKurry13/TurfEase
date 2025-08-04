@@ -12,7 +12,6 @@ export default function Event() {
       <div class="container py-5">
         <div class="row mb-4">
           <div class="col-12">
-
             <div class="d-flex flex-wrap justify-content-sm-start">
               <button
                 type="button"
@@ -51,11 +50,10 @@ export default function Event() {
                 Dadar
               </button>
             </div>
-
           </div>
         </div>
 
-        <div class="card" style={{width: '18rem'}}>
+        <div class="card" style={{ width: "18rem" }}>
           <img src="..." class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -79,7 +77,6 @@ export default function Event() {
           </div> */}
         </div>
       </div>
-
     </>
   );
 }

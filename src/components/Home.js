@@ -73,30 +73,44 @@ export default function Home() {
       <br/>
 
       <div class="container">
-      <div class="card" style={{width: '18rem'}}>
-          <img src="..." class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card’s content.
-            </p>
+      <div class="row">
+          <div class="col-md-4">
+            <img
+              src="/assets/TurfEase.jpg"
+              class="w-100 mb-3 about-img"
+              loading="lazy"
+              alt="sos-about"
+              title="sos-about"
+              height="auto"
+              width="auto"
+            />
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-          </ul>
-          {/* <div class="card-body">
-            <a href="#" class="card-link">
-              Card link
-            </a>
-            <a href="#" class="card-link">
-              Another link
-            </a>
-          </div> */}
+          <div class="col-md-8 d-flex align-items-center">
+            <div class="about-content">
+              <h2>About Us</h2>
+              <div class="aboutdivider mb-4"></div>
+              <p>
+                Welcome to TurfZone, your all-in-one platform for discovering
+                and booking sports turfs across your city. We are dedicated to
+                making sports more accessible by eliminating the hassle of
+                offline booking and scheduling. Players can instantly check turf
+                availability, view pricing, and book their preferred slots
+                online. Our clean and responsive interface ensures a smooth
+                experience whether you're using a mobile, tablet, or desktop. We
+                empower turf owners with tools to manage bookings, update turf
+                details, and monitor payments in real time. With secure online payments, real-time
+                confirmations, and easy cancellations, we keep it simple and
+                safe. Our contact form allows players and turf managers to
+                connect for special bookings or support queries. Built using
+                React.js, Spring Boot, and MySQL, TurfZone is a modern solution
+                for a modern sports community. 
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+
+      
       <br/>
     </>
   );

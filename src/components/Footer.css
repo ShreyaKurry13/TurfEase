@@ -1,24 +1,18 @@
-.footer {
-    background-color: #222;
-    color: #ddd;
-  }
-  
-.footer-link {
-  color: #bbb;
-  text-decoration: none;
-}
-
-.footer-link:hover {
-  color: #fff;
+.footer a:hover {
   text-decoration: underline;
 }
 
-.footer-icon {
-  font-size: 1.2rem;
-  color: #bbb;
+.footer i {
+  color: white;
+  margin-right: 8px;
 }
 
-.footer-icon:hover {
-  color: #fff;
+@media (max-width: 576px) {
+  .footer h5 {
+    font-size: 1.1rem;
+  }
+
+  .footer p, .footer li, .footer a {
+    font-size: 0.9rem;
+  }
 }
-  
