@@ -1,32 +1,50 @@
-.custom-carousel {
-    max-height: 400px;
-    overflow: hidden;
+/* Hero Section */
+.hero-section {
+  background-color: #355E3B;
+  padding: 3rem 0;
+}
+
+.hero-title {
+  font-size: 3rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 0;
   }
-  
-  .carousel-image {
-    height: 500px;
-    object-fit: cover;
-    width: 100%;
+
+  .hero-title {
+    font-size: 2.2rem;
   }
-  
-  /* Responsive behavior */
-  @media (max-width: 768px) {
-    .custom-carousel {
-      max-height: 300px;
-    }
-  
-    .carousel-image {
-      height: 300px;
-    }
+
+  .hero-subtitle {
+    font-size: 1rem;
   }
-  
-  @media (max-width: 480px) {
-    .custom-carousel {
-      max-height: 200px;
-    }
-  
-    .carousel-image {
-      height: 200px;
-    }
-  }
-  
+}
+
+/* Carousel Image Styling */
+.carousel-img {
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* About Image Hover */
+.about-img {
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-img:hover {
+  transform: scale(1.05);
+}
+
+/* Button Hover Fix */
+.btn-outline-success:hover {
+  background-color: #198754;
+  color: white;
+}

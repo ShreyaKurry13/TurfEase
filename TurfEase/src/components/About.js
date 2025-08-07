@@ -4,91 +4,108 @@ import { Link } from "react-router";
 export default function About() {
   return (
     <>
-      <div className="py-4" style={{ backgroundColor: "#587653" }}>
+      <div className="py-4 text-white text-center" style={{ backgroundColor: "#355E3B" }}>
         <div className="container">
-          <h1 className="text-white text-center">About Us</h1>
+          <h1>About Us</h1>
         </div>
       </div>
 
       <div className="container py-5">
+        {/* Intro Section */}
         <div className="row align-items-center mb-5">
-          <div className="col-md-4">
+          <div className="col-md-6 mb-4 mb-md-0">
             <img
               src="/assets/TurfEase.jpg"
-              className="img-fluid rounded"
+              className="img-fluid rounded shadow-sm"
               alt="about-turfzone"
               loading="lazy"
             />
           </div>
-          <div className="col-md-8">
-            <div>
-              <h2>About Us</h2>
-              <hr className="mb-4" />
-              <p>
-                Welcome to TurfEase, your all-in-one platform for discovering and booking sports turfs across your city. We are dedicated to making sports more accessible by eliminating the hassle of offline booking and scheduling. Players can instantly check turf availability, view pricing, and book their preferred slots online. Our clean and responsive interface ensures a smooth experience whether you're using a mobile, tablet, or desktop. We empower turf owners with tools to manage bookings, update turf details, and monitor payments in real time. With secure online payments, real-time confirmations, and easy cancellations, we keep it simple and safe. Our contact form allows players and turf managers to connect for special bookings or support queries. Built using React.js, Spring Boot, and MySQL, TurfEase is a modern solution for a modern sports community.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="row mb-5">
-          <div className="col">
-            <h2>Our History</h2>
-            <hr className="mb-4" />
-            <p>
-              The idea behind TurfEase was born in early 2024 when a group of sports enthusiasts struggled to find a reliable way to book turf grounds for evening matches. We noticed how frustrating it was to call turf managers, confirm availability manually, and often face last-minute cancellations or miscommunications. What started as a simple Excel sheet and WhatsApp group for turf availability quickly evolved into a vision — to digitally transform turf booking in India.
+          <div className="col-md-6">
+            <h2 className="mb-3">About TurfEase</h2>
+            <p className="text-muted">
+              Welcome to TurfEase, your all-in-one platform for discovering and
+              booking sports turfs across your city. We are dedicated to making
+              sports more accessible by eliminating the hassle of offline
+              booking and scheduling.
             </p>
-            <p>
-              By mid-2024, we began developing the platform using React.js for the frontend, Spring Boot for the backend, and MySQL as our core database. Our goal was to make the process fast, transparent, and fair for both players and turf owners. We officially launched our beta version in early 2025 with a small set of partners in Maharashtra. Positive feedback and real-world use helped us refine our features — including real-time slot availability, secure online payments, and smart filters. Today, TurfEase continues to grow, empowering local players, turf managers, and sports organizers through a tech-enabled booking solution built for the future of Indian sports.
+            <p className="text-muted">
+              Built using React.js, Spring Boot, and MySQL, TurfEase empowers both
+              players and turf owners through a clean, responsive and secure platform.
             </p>
           </div>
         </div>
 
-        <div className="row mb-5">
-          <div className="col">
-            <h2>What We Offer</h2>
-            <hr className="mb-4" />
-            <ul>
-              <li><b>Real-Time Turf Availability:</b> Instantly view available time slots, reducing the need for manual confirmations.</li>
-              <li><b>Easy Online Booking:</b> Select date, time, and turf with just a few clicks. Booking confirmations are sent via email.</li>
-              <li><b>Secure Payment Gateway:</b> Pay securely online using UPI, debit/credit cards, or wallets. Payments update in real time.</li>
-              <li><b>Turf Management for Owners:</b> Admin panel to manage turf info, view bookings, and track payments.</li>
-            </ul>
-          </div>
+        {/* Our History */}
+        <div className="mb-5">
+          <h2>Our History</h2>
+          <hr />
+          <p className="text-muted">
+            The idea behind TurfEase was born in early 2024 when a group of sports
+            enthusiasts struggled to find a reliable way to book turf grounds for
+            evening matches. From a simple Excel sheet to a powerful web app,
+            TurfEase has grown into a game-changer for the Indian sports community.
+          </p>
+          <p className="text-muted">
+            We launched our beta in early 2025 with partners in Maharashtra,
+            continuously improving based on real-world feedback.
+          </p>
         </div>
 
-        <div className="row mb-5">
-          <div className="col">
-            <h2>Our Impact</h2>
-            <hr className="mb-4" />
-            <p>
-              At TurfEase, we’re more than just a booking platform — we’re enabling a sports movement. Since our launch, we’ve helped thousands of players find and book turfs easily, saving hours of effort. We've partnered with local turf owners to bring their venues online, helping them increase bookings and revenue. By digitizing the process, we’ve reduced booking errors, improved slot utilization, and brought transparency to the turf ecosystem. Our platform encourages healthy lifestyles and community sports by making access to sports infrastructure faster, fairer, and smarter.
-            </p>
-          </div>
+        {/* What We Offer */}
+        <div className="mb-5">
+          <h2>What We Offer</h2>
+          <hr />
+          <ul className="list-unstyled text-muted">
+            <li className="mb-2">
+              <strong>Real-Time Turf Availability:</strong> Instantly view available slots.
+            </li>
+            <li className="mb-2">
+              <strong>Easy Online Booking:</strong> Book slots with just a few clicks.
+            </li>
+            <li className="mb-2">
+              <strong>Secure Payment Gateway:</strong> Pay using UPI, cards, wallets.
+            </li>
+            <li className="mb-2">
+              <strong>Turf Management:</strong> Admin tools for turf owners to manage and grow.
+            </li>
+          </ul>
         </div>
 
-        <div className="row">
-          <div className="col">
-            <h2>Join Us</h2>
-            <hr className="mb-4" />
-            <p>
-              Whether you're a sports lover looking for the perfect place to play, or a turf owner wanting to grow your business — TurfEase is the right place for you.
-            </p>
-            <p>
-              🎮 <b>For Players:</b> Create your free account, explore turfs near you, book your favorite slot, and get playing. It's fast, secure, and hassle-free!
-            </p>
-            <p>
-              🏟️ <b>For Turf Owners:</b> List your turf, manage bookings with ease, receive payments instantly, and connect with more customers every day.
-            </p>
-            <p>
-              🚀 Be part of the change. Join our growing sports community and experience the power of smart, digital turf management.
-            </p>
-            <p>
-              <b>
-                Have questions? Reach out to us at <Link to="/contact">contact@turfEase.site</Link> and stay updated with the latest news and events!
-              </b>
-            </p>
-          </div>
+        {/* Our Impact */}
+        <div className="mb-5">
+          <h2>Our Impact</h2>
+          <hr />
+          <p className="text-muted">
+            Since launch, we've helped thousands of players and turf owners simplify their
+            booking processes. We've enabled better visibility, transparency, and utilization
+            of sports infrastructure across the country.
+          </p>
+        </div>
+
+        {/* Join Us */}
+        <div className="mb-5">
+          <h2>Join Us</h2>
+          <hr />
+          <p className="text-muted">
+            Whether you're a sports lover or a turf owner, TurfEase is built for you.
+          </p>
+          <ul className="text-muted">
+            <li className="mb-2">
+              🎮 <strong>For Players:</strong> Book your favorite slot instantly. Fast and secure!
+            </li>
+            <li className="mb-2">
+              🏟️ <strong>For Turf Owners:</strong> Manage your business online and reach more customers.
+            </li>
+            <li className="mb-2">
+              🚀 Be part of the change. Join the TurfEase movement today.
+            </li>
+          </ul>
+          <p>
+            <strong>
+              Have questions? Reach out at <Link to="/contact">contact@turfEase.site</Link>
+            </strong>
+          </p>
         </div>
       </div>
     </>

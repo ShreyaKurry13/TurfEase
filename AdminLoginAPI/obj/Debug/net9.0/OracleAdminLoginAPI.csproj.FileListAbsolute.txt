@@ -1,0 +1,138 @@
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\appsettings.json
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\OracleAdminLoginAPI.staticwebassets.endpoints.json
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\OracleAdminLoginAPI.exe
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\OracleAdminLoginAPI.deps.json
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\OracleAdminLoginAPI.runtimeconfig.json
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\OracleAdminLoginAPI.dll
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\OracleAdminLoginAPI.pdb
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\Oracle.EntityFrameworkCore.dll
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\Oracle.ManagedDataAccess.dll
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\System.DirectoryServices.Protocols.dll
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.csproj.AssemblyReference.cache
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.AssemblyInfoInputs.cache
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.AssemblyInfo.cs
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.csproj.CoreCompileInputs.cache
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\obj\Debug\net9.0\scopedcss\bundle\OracleAdminLoginAPI.styles.css
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\obj\Debug\net9.0\OracleAd.E5909316.Up2Date
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.dll
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\obj\Debug\net9.0\refint\OracleAdminLoginAPI.dll
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.pdb
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.genruntimeconfig.cache
+C:\Users\Pruthvi Jadhav\OracleAdminLoginAPI\obj\Debug\net9.0\ref\OracleAdminLoginAPI.dll
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\appsettings.json
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\OracleAdminLoginAPI.staticwebassets.endpoints.json
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\OracleAdminLoginAPI.exe
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\OracleAdminLoginAPI.deps.json
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\OracleAdminLoginAPI.runtimeconfig.json
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\OracleAdminLoginAPI.dll
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\OracleAdminLoginAPI.pdb
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\Oracle.EntityFrameworkCore.dll
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\Oracle.ManagedDataAccess.dll
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\System.DirectoryServices.Protocols.dll
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.csproj.AssemblyReference.cache
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.AssemblyInfoInputs.cache
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.AssemblyInfo.cs
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.csproj.CoreCompileInputs.cache
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\scopedcss\bundle\OracleAdminLoginAPI.styles.css
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\staticwebassets\msbuild.OracleAdminLoginAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\staticwebassets\msbuild.OracleAdminLoginAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\staticwebassets\msbuild.build.OracleAdminLoginAPI.props
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.OracleAdminLoginAPI.props
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.OracleAdminLoginAPI.props
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\OracleAd.E5909316.Up2Date
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.dll
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\refint\OracleAdminLoginAPI.dll
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.pdb
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.genruntimeconfig.cache
+C:\Users\dac33\Downloads\OracleAdminLoginAPI\OracleAdminLoginAPI\obj\Debug\net9.0\ref\OracleAdminLoginAPI.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\appsettings.json
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\OracleAdminLoginAPI.staticwebassets.endpoints.json
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\OracleAdminLoginAPI.exe
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\OracleAdminLoginAPI.deps.json
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\OracleAdminLoginAPI.runtimeconfig.json
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\OracleAdminLoginAPI.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\OracleAdminLoginAPI.pdb
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Oracle.EntityFrameworkCore.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Oracle.ManagedDataAccess.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\System.DirectoryServices.Protocols.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.csproj.AssemblyReference.cache
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.AssemblyInfoInputs.cache
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.AssemblyInfo.cs
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.csproj.CoreCompileInputs.cache
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.sourcelink.json
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\scopedcss\bundle\OracleAdminLoginAPI.styles.css
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\staticwebassets\msbuild.OracleAdminLoginAPI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\staticwebassets\msbuild.OracleAdminLoginAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\staticwebassets\msbuild.build.OracleAdminLoginAPI.props
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.OracleAdminLoginAPI.props
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.OracleAdminLoginAPI.props
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\OracleAd.E5909316.Up2Date
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\refint\OracleAdminLoginAPI.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.pdb
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\OracleAdminLoginAPI.genruntimeconfig.cache
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\obj\Debug\net9.0\ref\OracleAdminLoginAPI.dll

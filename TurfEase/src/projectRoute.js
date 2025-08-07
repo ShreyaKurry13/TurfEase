@@ -5,6 +5,8 @@ import Home from "./components/Home";
 import Event from "./components/Event";
 import Contact from "./components/Contact";
 import Login from "./components/Login";
+import Payment from "./components/Payment";
+
 
 
 const projectRoute = (
@@ -16,6 +18,7 @@ const projectRoute = (
                 <Route path="/event" element={<Event/>}/>
                 <Route path="/contact" element={<Contact/>}/>
                 <Route path="/login" element={<Login/>}/>
+                <Route path="/payment" element={<Payment/>}/>
             </Route>
         </Routes>
     </BrowserRouter>

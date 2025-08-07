@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router";
 
 export default function Event() {
   const [turfs, setTurfs] = useState([]);
   const [filteredTurfs, setFilteredTurfs] = useState([]);
   const [selectedLocation, setSelectedLocation] = useState("All");
+  const navigate = useNavigate();
 
   const locations = ["All", "Bandra", "Andheri", "Thane", "Dadar", "Goregaon", "Borivali"];
 
@@ -16,7 +18,10 @@ export default function Event() {
     try {
       const response = await axios.get("http://localhost:8787/turfs");
       setTurfs(response.data);
-      setFilteredTurfs(response.data);
+      const sortedTurfs = [...response.data].sort((a, b) =>
+        a.location.localeCompare(b.location)
+      );
+      setFilteredTurfs(sortedTurfs);
     } catch (error) {
       console.error("Error fetching turfs:", error);
     }
@@ -26,7 +31,10 @@ export default function Event() {
     setSelectedLocation(location);
 
     if (location === "All") {
-      setFilteredTurfs(turfs);
+      const sortedTurfs = [...turfs].sort((a, b) =>
+        a.location.localeCompare(b.location)
+      );
+      setFilteredTurfs(sortedTurfs);
       return;
     }
 
@@ -38,9 +46,13 @@ export default function Event() {
     }
   };
 
+  const handleTurfClick = (turf) => {
+    navigate("/payment", { state: { turf } });
+  };
+
   return (
     <>
-      <div className="py-4" style={{ backgroundColor: "#587653" }}>
+      <div className="py-4" style={{ backgroundColor: "#355E3B" }}>
         <div className="container">
           <h1 className="text-white text-center">Book Event</h1>
         </div>
@@ -52,10 +64,15 @@ export default function Event() {
           {locations.map((location, idx) => (
             <button
               key={idx}
-              className={`btn m-2 ${
-                selectedLocation === location ? "btn-danger" : "btn-outline-success"
+              className={`btn m-2 px-4 py-2 fw-semibold shadow ${
+                selectedLocation === location ? "btn-danger" : "btn-warning"
               }`}
               onClick={() => handleFilter(location)}
+              style={{
+                borderRadius: "25px",
+                transition: "all 0.3s ease",
+                minWidth: "100px",
+              }}
             >
               {location}
             </button>
@@ -66,25 +83,27 @@ export default function Event() {
         <div className="row g-4">
           {filteredTurfs.length > 0 ? (
             filteredTurfs.map((turf, idx) => (
-              <div className="col-sm-6 col-md-4" key={idx}>
-                <div className="card h-100 shadow-lg rounded-4 border-0">
+              <div className="col-12 col-sm-6 col-md-4" key={idx}>
+                <div
+                  className="card h-100 shadow-sm border-0 rounded-4 cursor-pointer"
+                  onClick={() => handleTurfClick(turf)}
+                  style={{ cursor: "pointer" }}
+                >
                   <img
                     src={turf.image || "https://via.placeholder.com/300x200?text=No+Image"}
                     className="card-img-top rounded-top-4"
                     alt={turf.name}
                     style={{ height: "220px", objectFit: "cover" }}
                   />
-                  <div className="card-body">
-                    <h5 className="card-title fw-bold text-success">{turf.name}</h5>
-                    <p className="card-text text-muted">
-                      
-                    </p>
+                  <div className="card-body d-flex flex-column">
+                    <h5 className="card-title fw-bold text-success mb-2">{turf.name}</h5>
+                    <p className="card-text text-muted flex-grow-1"></p>
                   </div>
                   <div className="card-footer bg-white border-0 d-flex justify-content-between">
-                    <span className="badge bg-primary">
+                    <span className="badge bg-primary px-3 py-2 rounded-pill">
                       📍 {turf.location || "Unknown"}
                     </span>
-                    <span className="badge bg-success">
+                    <span className="badge bg-warning text-dark px-3 py-2 rounded-pill">
                       ₹ {turf.price ? turf.price : "N/A"}
                     </span>
                   </div>
