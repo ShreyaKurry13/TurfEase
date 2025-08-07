@@ -77,7 +77,7 @@ export default function Event() {
                   <div className="card-body">
                     <h5 className="card-title fw-bold text-success">{turf.name}</h5>
                     <p className="card-text text-muted">
-                      {turf.description || "No description available."}
+                      
                     </p>
                   </div>
                   <div className="card-footer bg-white border-0 d-flex justify-content-between">

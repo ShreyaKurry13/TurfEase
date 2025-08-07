@@ -90,7 +90,7 @@ export default function Home() {
               <h2>About Us</h2>
               <div class="aboutdivider mb-4"></div>
               <p>
-                Welcome to TurfZone, your all-in-one platform for discovering
+                Welcome to TurfEase, your all-in-one platform for discovering
                 and booking sports turfs across your city. We are dedicated to
                 making sports more accessible by eliminating the hassle of
                 offline booking and scheduling. Players can instantly check turf
@@ -102,7 +102,7 @@ export default function Home() {
                 confirmations, and easy cancellations, we keep it simple and
                 safe. Our contact form allows players and turf managers to
                 connect for special bookings or support queries. Built using
-                React.js, Spring Boot, and MySQL, TurfZone is a modern solution
+                React.js, Spring Boot, and MySQL, TurfEase is a modern solution
                 for a modern sports community. 
               </p>
             </div>

@@ -5,9 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@SpringBootApplication(scanBasePackages = {"turf_api"})
-@EnableJpaRepositories(basePackages = {"turf_api"})
-@EntityScan(basePackages = {"turf_api"})
+@SpringBootApplication(scanBasePackages = {"contact_api","turf_api"})
+@EnableJpaRepositories(basePackages = {"contact_api","turf_api"})
+@EntityScan(basePackages = {"contact_api","turf_api"})
 public class TurfBookingApplication {
 
 	public static void main(String[] args) {
