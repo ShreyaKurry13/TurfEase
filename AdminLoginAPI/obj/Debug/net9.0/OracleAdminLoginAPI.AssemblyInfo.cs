@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OracleAdminLoginAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07905158e7b5805a198e3b93650c31d9c1e2675b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41c2f0c0d4cd3995f93368c3ff9acd048bcf0cfe")]
 [assembly: System.Reflection.AssemblyProductAttribute("OracleAdminLoginAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OracleAdminLoginAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

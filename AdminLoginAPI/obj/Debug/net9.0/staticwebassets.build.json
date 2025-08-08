@@ -1,1 +1,12 @@
-{"Version":1,"Hash":"J9Dpp7D2cP9tBY48audKoWB0M5cUOuBMfDUmx+MS+wE=","Source":"OracleAdminLoginAPI","BasePath":"_content/OracleAdminLoginAPI","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
+{
+  "Version": 1,
+  "Hash": "J9Dpp7D2cP9tBY48audKoWB0M5cUOuBMfDUmx+MS+wE=",
+  "Source": "OracleAdminLoginAPI",
+  "BasePath": "_content/OracleAdminLoginAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

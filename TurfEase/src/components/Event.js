@@ -52,10 +52,17 @@ export default function Event() {
 
   return (
     <>
-      <div className="py-4" style={{ backgroundColor: "#355E3B" }}>
-        <div className="container">
-          <h1 className="text-white text-center">Book Event</h1>
-        </div>
+      <div
+        className="text-white text-center"
+        style={{
+          backgroundColor: "#355E3B",
+          height: "120px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <h1 style={{ margin: 0 }}>Book Event</h1>
       </div>
 
       <div className="container py-5">

@@ -62,11 +62,17 @@ export default function Contact() {
 
   return (
     <>
-      {/* Header */}
-      <div className="py-4 bg-theme" style={{ backgroundColor: "#355E3B" }}>
-        <div className="container">
-          <h1 className="text-center text-white">Contact Us</h1>
-        </div>
+      <div
+        className="text-white text-center"
+        style={{
+          backgroundColor: "#355E3B",
+          height: "120px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <h1 style={{ margin: 0 }}>Contact Us</h1>
       </div>
 
       {/* Content */}

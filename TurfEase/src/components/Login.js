@@ -55,10 +55,17 @@ export default function Login() {
 
   return (
     <>
-      <div className="py-4 bg-theme" style={{ backgroundColor: "#355E3B" }}>
-        <div className="container">
-          <h1 className="text-center text-white">Login / Register</h1>
-        </div>
+      <div
+        className="text-white text-center"
+        style={{
+          backgroundColor: "#355E3B",
+          height: "120px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <h1 style={{ margin: 0 }}>Login / Register</h1>
       </div>
 
       <div className="container d-flex justify-content-center align-items-center py-5">
