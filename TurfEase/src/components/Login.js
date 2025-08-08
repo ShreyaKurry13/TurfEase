@@ -39,10 +39,10 @@ export default function Login() {
       });
   
       const result = await response.json();
-      console.log("Response:", result); // optional for debugging
+      console.log("Response:", result); 
   
       if (response.ok) {
-        localStorage.setItem("token", "dummy-token"); // Replace with real token later
+        localStorage.setItem("token", "dummy-token"); 
         navigate("/dashboard");
       } else {
         setErrorMessage(result.message || "Invalid credentials");

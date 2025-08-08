@@ -6,8 +6,7 @@ import Event from "./components/Event";
 import Contact from "./components/Contact";
 import Login from "./components/Login";
 import Payment from "./components/Payment";
-
-
+import Dashboard from "./components/Dashboard";
 
 const projectRoute = (
     <BrowserRouter>
@@ -20,6 +19,7 @@ const projectRoute = (
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/payment" element={<Payment/>}/>
             </Route>
+            <Route path="/dashboard" element={<Dashboard/>}/>
         </Routes>
     </BrowserRouter>
 );
