@@ -51,7 +51,7 @@ namespace OracleAdminLoginAPI.Controllers
             var token = tokenHandler.CreateToken(tokenDescriptor);
             var tokenString = tokenHandler.WriteToken(token);
 
-            return Ok(new { token = tokenString, message = "Login successful" });
+            return Ok(new LoginResponse { Token = tokenString, Message = "Login successful" });
         }
 
         // ADD ADMIN (requires login)

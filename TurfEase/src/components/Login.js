@@ -44,6 +44,8 @@ export default function Login() {
       if (response.ok) {
         localStorage.setItem("token", result.token); // store real token
         navigate("/dashboard");
+        console.log(result.token);
+        
       }
        else {
         setErrorMessage(result.message || "Invalid credentials");
