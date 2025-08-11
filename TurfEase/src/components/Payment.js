@@ -12,10 +12,17 @@ export default function Payment() {
   return (
     <>
       {/* Page Header */}
-      <div className="py-4" style={{ backgroundColor: "#355E3B" }}>
-        <div className="container">
-          <h1 className="text-white text-center">Payment</h1>
-        </div>
+      <div
+        className="text-white text-center"
+        style={{
+          backgroundColor: "#355E3B",
+          height: "120px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <h1 style={{ margin: 0 }}>Payment</h1>
       </div>
 
       {/* Main Content */}
@@ -67,7 +74,7 @@ export default function Payment() {
         <div className="mt-5">
           <h5 className="fw-bold mb-3">Location</h5>
           <iframe
-            src={`https://www.google.com/maps?q=${encodeURIComponent(turf.location)}&output=embed`}
+            src={`https://www.google.com/maps?q=${encodeURIComponent(turf.address)}&output=embed`}
             width="100%"
             height="350"
             style={{ border: "0", borderRadius: "12px" }}

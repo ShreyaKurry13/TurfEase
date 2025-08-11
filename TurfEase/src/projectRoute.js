@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Login from "./components/Login";
 import Payment from "./components/Payment";
 import Dashboard from "./components/Dashboard";
+import ProtectedRoute from "./protectedRoute";
 
 const projectRoute = (
     <BrowserRouter>
@@ -19,7 +20,7 @@ const projectRoute = (
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/payment" element={<Payment/>}/>
             </Route>
-            <Route path="/dashboard" element={<Dashboard/>}/>
+            <Route path="/dashboard" element={ <ProtectedRoute><Dashboard/></ProtectedRoute> }/>
         </Routes>
     </BrowserRouter>
 );

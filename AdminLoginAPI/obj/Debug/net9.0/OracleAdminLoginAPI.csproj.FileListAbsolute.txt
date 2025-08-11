@@ -98,6 +98,7 @@ C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\OracleAdm
 C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\OracleAdminLoginAPI.dll
 C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\OracleAdminLoginAPI.pdb
 C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Humanizer.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
@@ -109,6 +110,13 @@ C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Microsoft
 C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Microsoft.Identity.Abstractions.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Microsoft.OpenApi.dll
 C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\Mono.TextTemplating.dll
 C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\MySqlConnector.dll
@@ -119,6 +127,7 @@ C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\System.Co
 C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\System.Composition.Hosting.dll
 C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\System.Composition.Runtime.dll
 C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\System.Composition.TypedParts.dll
+C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll

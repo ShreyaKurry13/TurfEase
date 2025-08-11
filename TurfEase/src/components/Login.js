@@ -39,12 +39,13 @@ export default function Login() {
       });
   
       const result = await response.json();
-      console.log("Response:", result); 
+      console.log("Response:", result);
   
       if (response.ok) {
-        localStorage.setItem("token", "dummy-token"); 
+        localStorage.setItem("token", result.token); // store real token
         navigate("/dashboard");
-      } else {
+      }
+       else {
         setErrorMessage(result.message || "Invalid credentials");
       }
     } catch (error) {
@@ -52,6 +53,7 @@ export default function Login() {
       console.error(error);
     }
   };
+  
 
   return (
     <>

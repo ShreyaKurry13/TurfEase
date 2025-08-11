@@ -1,6 +1,11 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using OracleAdminLoginAPI.Models;
+using Microsoft.IdentityModel.Tokens;
 using OracleAdminLoginAPI.Data;
+using OracleAdminLoginAPI.Models;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace OracleAdminLoginAPI.Controllers
 {
@@ -9,27 +14,48 @@ namespace OracleAdminLoginAPI.Controllers
     public class AdminController : ControllerBase
     {
         private readonly AdminDbContext _context;
+        private readonly IConfiguration _configuration;
 
-        public AdminController(AdminDbContext context)
+        public AdminController(AdminDbContext context, IConfiguration configuration)
         {
             _context = context;
+            _configuration = configuration;
         }
 
+        // LOGIN (no authorization required)
+        [AllowAnonymous]
         [HttpPost("login")]
         public IActionResult Login([FromBody] Admin loginRequest)
         {
-            if (loginRequest is null || string.IsNullOrWhiteSpace(loginRequest.Username) || string.IsNullOrWhiteSpace(loginRequest.Password))
+            if (string.IsNullOrWhiteSpace(loginRequest.Username) || string.IsNullOrWhiteSpace(loginRequest.Password))
                 return BadRequest(new { message = "Username and Password are required" });
 
             var admin = _context.Admins.FirstOrDefault(a =>
                 a.Username == loginRequest.Username && a.Password == loginRequest.Password);
 
-            if (admin != null)
-                return Ok(new { message = "Login successful" });
+            if (admin == null)
+                return Unauthorized(new { message = "Invalid credentials" });
 
-            return Unauthorized(new { message = "Invalid credentials" });
+            // Generate JWT token
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]);
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new[]
+                {
+                    new Claim(ClaimTypes.Name, admin.Username)
+                }),
+                Expires = DateTime.UtcNow.AddHours(1),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            var tokenString = tokenHandler.WriteToken(token);
+
+            return Ok(new { token = tokenString, message = "Login successful" });
         }
 
+        // ADD ADMIN (requires login)
+        [Authorize]
         [HttpPost]
         public IActionResult AddAdmin([FromBody] Admin newAdmin)
         {
@@ -42,17 +68,20 @@ namespace OracleAdminLoginAPI.Controllers
             return Ok(new { message = "Admin added successfully" });
         }
 
+        // GET ALL ADMINS (requires login)
+        [Authorize]
         [HttpGet]
         public IActionResult GetAllAdmins()
         {
             var admins = _context.Admins.ToList();
-
             if (!admins.Any())
                 return NotFound(new { message = "No admins found" });
 
             return Ok(admins);
         }
 
+        // DELETE ADMIN (requires login)
+        [Authorize]
         [HttpDelete("{username}")]
         public IActionResult DeleteAdmin(string username)
         {
