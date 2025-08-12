@@ -39,8 +39,50 @@ public class TurfController {
         turfServiceRef.createTurf(newTurf);
         return "Turf created successfully!";
     }
-   
-    
+	
+//	@PostMapping("/turfs")
+//	public String createMultipleTurfs(@RequestBody List<Turf> turfs) {
+//	    turfServiceRef.createMultipleTurfs(turfs);
+//	    return "All turfs created successfully!";
+//	}
+	
+	@PostMapping("/turfs/bulk")
+    public String createMultipleTurfs(@RequestBody List<Turf> turfs) {
+        turfServiceRef.createMultipleTurfs(turfs);
+        return turfs.size() + " turfs created successfully!";
+    }
+	
+	@PutMapping("/turfs/{id}")
+    public String updateTurf(@PathVariable Integer id, @RequestBody Turf updatedTurf) {
+        List<Turf> allTurfs = (List<Turf>) turfServiceRef.getAllTurfs();
+        for (Turf existingTurf : allTurfs) {
+            if (existingTurf.getId() == id) {
+                // 🔹 Prevent ID change
+                if (updatedTurf.getId() != 0 && updatedTurf.getId() != id) {
+                    return "Turf ID cannot be changed!";
+                }
+                if (updatedTurf.getName() != null) {
+                    existingTurf.setName(updatedTurf.getName());
+                }
+                if (updatedTurf.getAddress() != null) {
+                    existingTurf.setAddress(updatedTurf.getAddress());
+                }
+                if (updatedTurf.getLocation() != null) {
+                    existingTurf.setLocation(updatedTurf.getLocation());
+                }
+                if (updatedTurf.getPrice() != 0) {
+                    existingTurf.setPrice(updatedTurf.getPrice());
+                }
+                if (updatedTurf.getImage() != null) {
+                    existingTurf.setImage(updatedTurf.getImage());
+                }
+                turfServiceRef.createTurf(existingTurf);
+                return "Turf updated successfully!";
+            }
+        }
+        return "Turf not found!";
+    }
+
     @DeleteMapping("/turfs/{id}")
     public String deleteTurf(@PathVariable Integer id) {
         turfServiceRef.deleteTurf(id);
