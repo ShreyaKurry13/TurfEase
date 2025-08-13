@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "VQ8Ik9xUGGI=",
+  "dgSpecHash": "I7MjG3mKKnw=",
   "success": true,
   "projectFilePath": "C:\\Users\\dac33\\Desktop\\Project\\TurfEase\\AdminLoginAPI\\OracleAdminLoginAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\dac33\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\dac33\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\dac33\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\9.0.8\\microsoft.aspnetcore.authentication.jwtbearer.9.0.8.nupkg.sha512",
     "C:\\Users\\dac33\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.7\\microsoft.aspnetcore.openapi.9.0.7.nupkg.sha512",

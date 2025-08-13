@@ -6,7 +6,7 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Register DbContext for MySQL
+// ✅ Register DbContext for Admin
 builder.Services.AddDbContext<AdminDbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
@@ -14,7 +14,15 @@ builder.Services.AddDbContext<AdminDbContext>(options =>
     )
 );
 
-// JWT authentication setup
+// ✅ Register DbContext for User
+builder.Services.AddDbContext<UserDbContext>(options =>
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))
+    )
+);
+
+// ✅ JWT Authentication Setup
 var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]);
 builder.Services.AddAuthentication(options =>
 {
@@ -34,7 +42,7 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-// Enable CORS for React
+// ✅ Enable CORS for React Frontend
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp",
@@ -47,11 +55,9 @@ builder.Services.AddControllers();
 
 var app = builder.Build();
 
-// Enable middleware
 app.UseCors("AllowReactApp");
 app.UseHttpsRedirection();
-app.UseAuthentication(); // must be before authorization
+app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
-
 app.Run();
