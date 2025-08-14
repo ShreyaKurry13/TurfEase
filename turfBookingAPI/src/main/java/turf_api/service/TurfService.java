@@ -13,12 +13,14 @@ import turf_api.repo.TurfRepository;
 
 @Service
 public class TurfService {
+	
 	@Autowired
 	private TurfRepository TurfRepositoryRef;
 	
-	public Collection<Turf> getAllTurfs(){
-		return TurfRepositoryRef.findAll();
+	public Collection<Turf> getAllTurfs() {
+	    return TurfRepositoryRef.findAll();
 	}
+
 	
 	public List<Turf> getAllTurfLoc(String turfLocation) {
 	    return TurfRepositoryRef.findByLocation(turfLocation);
@@ -28,8 +30,17 @@ public class TurfService {
 		TurfRepositoryRef.save(newTurf);
 	}
 	
+//	public void createMultipleTurfs(List<Turf> turfs) {
+//		TurfRepositoryRef.saveAll(turfs);
+//	}
+
+	public void createMultipleTurfs(List<Turf> turfs) {
+		 TurfRepositoryRef.saveAll(turfs); 
+	}
+	
 	public void deleteTurf(Integer TurfId) {
 		TurfRepositoryRef.deleteById(TurfId);
 	}
+
 	
 }

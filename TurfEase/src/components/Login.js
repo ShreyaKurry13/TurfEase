@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
-import './Login.css';
+import "./Login.css";
 
 export default function Login() {
-  const [isAdmin, setIsAdmin] = useState(false);
-  const [isRegistering, setIsRegistering] = useState(false);
-  const [adminUsername, setAdminUsername] = useState("");
-  const [adminPassword, setAdminPassword] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
+  const [userFullName, setUserFullName] = useState("");
+  const [userPhone, setUserPhone] = useState("");
+  const [userEmail, setUserEmail] = useState("");
+  const [userPassword, setUserPassword] = useState("");
+
+  // Missing state declarations:
+  const [isAdmin, setIsAdmin] = useState(false); // Admin/user toggle state
+  const [isRegistering, setIsRegistering] = useState(false); // Toggle between registration and login
+  const [errorMessage, setErrorMessage] = useState(""); // For error messages
+  const [adminUsername, setAdminUsername] = useState(""); // Admin login username
+  const [adminPassword, setAdminPassword] = useState(""); // Admin login password
 
   const navigate = useNavigate();
 
@@ -25,7 +31,7 @@ export default function Login() {
   const handleAdminLogin = async (e) => {
     e.preventDefault();
     setErrorMessage("");
-  
+
     try {
       const response = await fetch("http://localhost:5002/api/admin/login", {
         method: "POST",
@@ -37,17 +43,15 @@ export default function Login() {
           password: adminPassword,
         }),
       });
-  
+
       const result = await response.json();
       console.log("Response:", result);
-  
+
       if (response.ok) {
-        localStorage.setItem("token", result.token); // store real token
+        localStorage.setItem("token", result.token); // Store real token
         navigate("/dashboard");
         console.log(result.token);
-        
-      }
-       else {
+      } else {
         setErrorMessage(result.message || "Invalid credentials");
       }
     } catch (error) {
@@ -55,7 +59,69 @@ export default function Login() {
       console.error(error);
     }
   };
-  
+
+  const handleUserRegister = async (e) => {
+    e.preventDefault();
+    setErrorMessage("");
+
+    try {
+      const response = await fetch("http://localhost:5002/api/User/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          fullName: userFullName,
+          phoneNumber: userPhone,
+          userEmail: userEmail,
+          password: userPassword,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        alert("Registration successful! Please login.");
+        setIsRegistering(false); // Toggle to login after successful registration
+      } else {
+        setErrorMessage(result.message || "Registration failed.");
+      }
+    } catch (error) {
+      setErrorMessage("Something went wrong. Please try again.");
+    }
+  };
+
+  const handleUserLogin = async (e) => {
+    e.preventDefault();
+    setErrorMessage("");
+
+    try {
+      const response = await fetch("http://localhost:5002/api/User/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          userEmail: userEmail,
+          password: userPassword,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        localStorage.setItem("userToken", result.token);
+        localStorage.setItem("userFullName", result.fullName); // ✅ store name
+        alert("Login successful!");
+        navigate("/profile");
+      }
+       else {
+        setErrorMessage(result.message || "Invalid email or password.");
+      }
+    } catch (error) {
+      setErrorMessage("Something went wrong. Please try again.");
+    }
+  };
 
   return (
     <>
@@ -83,8 +149,15 @@ export default function Login() {
           }}
         >
           <div className="card-body px-4 py-4">
-            <h4 className="text-center mb-3" style={{ color: "blue", fontWeight: "600" }}>
-              {isAdmin ? "Admin Login" : isRegistering ? "User Registration" : "User Login"}
+            <h4
+              className="text-center mb-3"
+              style={{ color: "blue", fontWeight: "600" }}
+            >
+              {isAdmin
+                ? "Admin Login"
+                : isRegistering
+                ? "User Registration"
+                : "User Login"}
             </h4>
 
             <div className="text-center mb-4">
@@ -103,7 +176,16 @@ export default function Login() {
               </div>
             </div>
 
-            <form onSubmit={isAdmin ? handleAdminLogin : undefined}>
+            <form
+              onSubmit={
+                isAdmin
+                  ? handleAdminLogin
+                  : isRegistering
+                  ? handleUserRegister
+                  : handleUserLogin
+              }
+            >
+              {/* User Registration Fields */}
               {!isAdmin && isRegistering && (
                 <>
                   <div className="mb-3">
@@ -116,8 +198,11 @@ export default function Login() {
                       id="fullname"
                       placeholder="Enter full name"
                       required
+                      value={userFullName}
+                      onChange={(e) => setUserFullName(e.target.value)}
                     />
                   </div>
+
                   <div className="mb-3">
                     <label htmlFor="phone" className="form-label">
                       Phone Number <span className="text-danger">*</span>
@@ -128,14 +213,18 @@ export default function Login() {
                       id="phone"
                       placeholder="Enter phone number"
                       required
+                      value={userPhone}
+                      onChange={(e) => setUserPhone(e.target.value)}
                     />
                   </div>
                 </>
               )}
 
+              {/* Email and Password Fields */}
               <div className="mb-3">
                 <label htmlFor="email" className="form-label">
-                  {isAdmin ? "Username" : "User Email"} <span className="text-danger">*</span>
+                  {isAdmin ? "Username" : "User Email"}{" "}
+                  <span className="text-danger">*</span>
                 </label>
                 <input
                   type={isAdmin ? "text" : "email"}
@@ -143,14 +232,19 @@ export default function Login() {
                   id="email"
                   placeholder={isAdmin ? "Enter username" : "Enter your email"}
                   required
-                  value={isAdmin ? adminUsername : undefined}
-                  onChange={(e) => isAdmin && setAdminUsername(e.target.value)}
+                  value={isAdmin ? adminUsername : userEmail}
+                  onChange={(e) =>
+                    isAdmin
+                      ? setAdminUsername(e.target.value)
+                      : setUserEmail(e.target.value)
+                  }
                 />
               </div>
 
               <div className="mb-3">
                 <label htmlFor="password" className="form-label">
-                  {isAdmin ? "Admin Password" : "Password"} <span className="text-danger">*</span>
+                  {isAdmin ? "Admin Password" : "Password"}{" "}
+                  <span className="text-danger">*</span>
                 </label>
                 <input
                   type="password"
@@ -158,8 +252,12 @@ export default function Login() {
                   id="password"
                   placeholder="Enter your password"
                   required
-                  value={isAdmin ? adminPassword : undefined}
-                  onChange={(e) => isAdmin && setAdminPassword(e.target.value)}
+                  value={isAdmin ? adminPassword : userPassword}
+                  onChange={(e) =>
+                    isAdmin
+                      ? setAdminPassword(e.target.value)
+                      : setUserPassword(e.target.value)
+                  }
                 />
               </div>
 
@@ -170,9 +268,17 @@ export default function Login() {
               <button
                 type="submit"
                 className="btn w-100 mb-3"
-                style={{ backgroundColor: "#ffc107", color: "#000", fontWeight: "bold" }}
+                style={{
+                  backgroundColor: "#ffc107",
+                  color: "#000",
+                  fontWeight: "bold",
+                }}
               >
-                {isAdmin ? "Login as Admin" : isRegistering ? "Register" : "Login as User"}
+                {isAdmin
+                  ? "Login as Admin"
+                  : isRegistering
+                  ? "Register"
+                  : "Login as User"}
               </button>
             </form>
 
@@ -183,7 +289,9 @@ export default function Login() {
                   onClick={handleRegisterToggle}
                   style={{ fontSize: "14px", color: "green" }}
                 >
-                  {isRegistering ? "Already have an account? Login" : "New user? Register here"}
+                  {isRegistering
+                    ? "Already have an account? Login"
+                    : "New user? Register here"}
                 </button>
               </div>
             )}

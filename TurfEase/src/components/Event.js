@@ -8,7 +8,7 @@ export default function Event() {
   const [selectedLocation, setSelectedLocation] = useState("All");
   const navigate = useNavigate();
 
-  const locations = ["All", "Bandra", "Andheri", "Thane", "Dadar", "Goregaon", "Borivali"];
+  const locations = ["All" , "Andheri", "Bandra" , "Borivali" , "Dadar" , "Goregaon", "Thane"];
 
   useEffect(() => {
     fetchAllTurfs();

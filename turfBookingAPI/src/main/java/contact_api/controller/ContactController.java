@@ -17,8 +17,6 @@ import contact_api.entity.Contact;
 import contact_api.entity.Reason;
 import contact_api.service.ContactService;
 
-
-
 @CrossOrigin
 @RestController
 public class ContactController {
