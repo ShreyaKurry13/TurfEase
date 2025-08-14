@@ -10,14 +10,49 @@ export default function Payment() {
     return new Date().toISOString().slice(0, 10);
   });
 
+  const [showAuthModal, setShowAuthModal] = useState(false);
+
+
+  const isUserLoggedIn = () => {
+    // Replace this with real authentication logic
+    return !!localStorage.getItem("userToken"); // Example: Check if token exists
+  };
+
+  const handleSlotClick = (slot) => {
+    if (!isUserLoggedIn()) {
+      setShowAuthModal(true); // Show custom modal
+      return;
+    }
+    console.log("Booking slot:", slot);
+  };
+  
   if (!turf) {
     return <div className="text-center mt-5">No turf data available.</div>;
   }
 
+  const isPastSlot = (slotDate, slotTime) => {
+    const now = new Date();
+    const selected = new Date(`${slotDate}T${slotTime}:00`);
+
+    return selected < now;
+  };
+
   // Filter slots by selectedDate
-  const filteredSlots = turf.slots.filter(
-    (slot) => slot.slotDate === selectedDate
-  );
+  const generateSlots = () => {
+    const slots = [];
+    const startHour = 8; // 8 AM
+    const endHour = 24; // 12 AM
+
+    for (let hour = startHour; hour < endHour; hour++) {
+      const start = `${hour.toString().padStart(2, "0")}:00`;
+      const end = `${(hour + 1).toString().padStart(2, "0")}:00`;
+      slots.push({ startTime: start, endTime: end });
+    }
+
+    return slots;
+  };
+
+  const allSlots = generateSlots();
 
   function formatTime(timeStr) {
     const [hour, minute] = timeStr.split(":");
@@ -40,7 +75,7 @@ export default function Payment() {
           alignItems: "center",
         }}
       >
-        <h1 style={{ margin: 0 }}>Available Slots</h1>
+        <h1 style={{ margin: 0 }}>Payment</h1>
       </div>
 
       {/* Main Content */}
@@ -78,24 +113,27 @@ export default function Payment() {
               />
 
               <h5 className="fw-bold mb-3">Available Slots</h5>
-              {filteredSlots.length === 0 ? (
-                <p className="text-muted">No slots available for this date.</p>
-              ) : (
-                <div className="row g-2">
-                  {filteredSlots.map((slot) => (
-                    <div key={slot.id} className="col-6 col-md-4">
-                      <div
-                        className={`text-white text-center rounded px-2 py-2 small fw-semibold ${
-                          slot.isBooked ? "bg-danger" : "bg-success"
-                        }`}
-                        style={{ fontSize: "0.85rem" }}
-                      >
-                        {formatTime(slot.startTime)} - {formatTime(slot.endTime)}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
+              <div className="row g-2">
+  {allSlots.map((slot, index) => {
+    const isPast = isPastSlot(selectedDate, slot.startTime);
+
+    return (
+      <div key={index} className="col-6 col-md-4">
+        <button
+          className={`w-100 text-white text-center rounded px-2 py-2 small fw-semibold border-0 ${
+            isPast ? "bg-secondary" : "bg-success"
+          }`}
+          style={{ fontSize: "0.85rem", cursor: isPast ? "not-allowed" : "pointer" }}
+          onClick={() => !isPast && handleSlotClick(slot)}
+          disabled={isPast}
+        >
+          {formatTime(slot.startTime)} - {formatTime(slot.endTime)}
+        </button>
+      </div>
+    );
+  })}
+</div>
+
             </div>
           </div>
         </div>
@@ -116,6 +154,53 @@ export default function Payment() {
           ></iframe>
         </div>
       </div>
+
+      {/* Custom Bootstrap Modal */}
+{showAuthModal && (
+  <div
+    className="modal fade show"
+    tabIndex="-1"
+    style={{ display: "block", backgroundColor: "rgba(0,0,0,0.5)" }}
+    role="dialog"
+  >
+    <div className="modal-dialog modal-dialog-centered" role="document">
+      <div className="modal-content">
+        <div className="modal-header">
+          <h5 className="modal-title">Login Required</h5>
+          <button
+            type="button"
+            className="btn-close"
+            aria-label="Close"
+            onClick={() => setShowAuthModal(false)}
+          ></button>
+        </div>
+        <div className="modal-body">
+          <p>Please login to continue booking your slot.</p>
+        </div>
+        <div className="modal-footer">
+          <button
+            type="button"
+            className="btn btn-secondary"
+            onClick={() => setShowAuthModal(false)}
+          >
+            Cancel
+          </button>
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={() => {
+              setShowAuthModal(false);
+              window.location.href = "/login";
+            }}
+          >
+            Go to Login
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+
     </>
   );
 }
