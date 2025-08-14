@@ -299,6 +299,14 @@ export default function Dashboard() {
                           📋 All Turfs
                         </button>
                       </li>
+                      <li>
+                        <button
+                          // onClick={}
+                          className="btn btn-link text-dark p-0 text-decoration-none"
+                        >
+                          🎰 Add Slots
+                        </button>
+                      </li>
                     </ul>
                   </div>
                 </div>
