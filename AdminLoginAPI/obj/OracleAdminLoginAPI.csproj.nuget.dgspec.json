@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dac33\\Desktop\\Project\\TurfEase\\AdminLoginAPI\\OracleAdminLoginAPI.csproj": {}
+    "D:\\REACT\\PROJECT\\TurfEase\\AdminLoginAPI\\OracleAdminLoginAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dac33\\Desktop\\Project\\TurfEase\\AdminLoginAPI\\OracleAdminLoginAPI.csproj": {
+    "D:\\REACT\\PROJECT\\TurfEase\\AdminLoginAPI\\OracleAdminLoginAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dac33\\Desktop\\Project\\TurfEase\\AdminLoginAPI\\OracleAdminLoginAPI.csproj",
+        "projectUniqueName": "D:\\REACT\\PROJECT\\TurfEase\\AdminLoginAPI\\OracleAdminLoginAPI.csproj",
         "projectName": "OracleAdminLoginAPI",
-        "projectPath": "C:\\Users\\dac33\\Desktop\\Project\\TurfEase\\AdminLoginAPI\\OracleAdminLoginAPI.csproj",
-        "packagesPath": "C:\\Users\\dac33\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dac33\\Desktop\\Project\\TurfEase\\AdminLoginAPI\\obj\\",
+        "projectPath": "D:\\REACT\\PROJECT\\TurfEase\\AdminLoginAPI\\OracleAdminLoginAPI.csproj",
+        "packagesPath": "C:\\Users\\shrey\\.nuget\\packages\\",
+        "outputPath": "D:\\REACT\\PROJECT\\TurfEase\\AdminLoginAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dac33\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\shrey\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -98,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

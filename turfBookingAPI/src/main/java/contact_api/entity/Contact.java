@@ -48,15 +48,11 @@ public class Contact {
 		this.reason = reason;
 		this.message = message;
 	}
-	
-	
 
 	public Contact() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-
-
 
 	public int getId() {
 		return id;

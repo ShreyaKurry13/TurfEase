@@ -28,23 +28,26 @@ export default function Event() {
   };
 
   const handleFilter = async (location) => {
-    setSelectedLocation(location);
+  setSelectedLocation(location);
 
-    if (location === "All") {
-      const sortedTurfs = [...turfs].sort((a, b) =>
-        a.location.localeCompare(b.location)
-      );
-      setFilteredTurfs(sortedTurfs);
-      return;
-    }
+  if (location === "All") {
+    const sortedTurfs = [...turfs].sort((a, b) => {
+      const locA = a?.location ?? "";
+      const locB = b?.location ?? "";
+      return locA.localeCompare(locB);
+    });
+    setFilteredTurfs(sortedTurfs);
+    return;
+  }
 
-    try {
-      const response = await axios.get(`http://localhost:8787/turfs/${location}`);
-      setFilteredTurfs(response.data);
-    } catch (error) {
-      console.error("Error filtering turfs:", error);
-    }
-  };
+  try {
+    const response = await axios.get(`http://localhost:8787/turfs/${location}`);
+    setFilteredTurfs(response.data);
+  } catch (error) {
+    console.error("Error filtering turfs:", error);
+  }
+};
+
 
   const handleTurfClick = (turf) => {
     navigate("/payment", { state: { turf } });
