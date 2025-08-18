@@ -9,21 +9,13 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OracleAdminLoginAPI
 build_property.RootNamespace = OracleAdminLoginAPI
-<<<<<<< HEAD
 build_property.ProjectDir = D:\REACT\PROJECT\TurfEase\AdminLoginAPI\
-=======
-build_property.ProjectDir = c:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI\
->>>>>>> 379bafa0b96f86de391286fdce75a34d47069402
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-<<<<<<< HEAD
 build_property.MSBuildProjectDirectory = D:\REACT\PROJECT\TurfEase\AdminLoginAPI
-=======
-build_property.MSBuildProjectDirectory = c:\Users\dac33\Desktop\Project\TurfEase\AdminLoginAPI
->>>>>>> 379bafa0b96f86de391286fdce75a34d47069402
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 

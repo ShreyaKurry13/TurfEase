@@ -18,7 +18,7 @@ export default function Header() {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/" onClick={handleNavLinkClick}>
+        <Link className="navbar-brand" to="/">
           <img
             src="/assets/TurfEaseShort.jpg"
             alt="logo"
@@ -46,7 +46,6 @@ export default function Header() {
                   location.pathname === "/" ? "active" : ""
                 }`}
                 to="/"
-                onClick={handleNavLinkClick}
               >
                 HOME
               </Link>
@@ -57,7 +56,6 @@ export default function Header() {
                   location.pathname === "/about" ? "active" : ""
                 }`}
                 to="/about"
-                onClick={handleNavLinkClick}
               >
                 ABOUT US
               </Link>
@@ -68,7 +66,6 @@ export default function Header() {
                   location.pathname === "/event" ? "active" : ""
                 }`}
                 to="/event"
-                onClick={handleNavLinkClick}
               >
                 EVENT
               </Link>
@@ -79,7 +76,6 @@ export default function Header() {
                   location.pathname === "/contact" ? "active" : ""
                 }`}
                 to="/contact"
-                onClick={handleNavLinkClick}
               >
                 CONTACT US
               </Link>

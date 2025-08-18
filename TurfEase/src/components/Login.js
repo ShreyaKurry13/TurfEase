@@ -81,6 +81,10 @@ export default function Login() {
       const result = await response.json();
 
       if (response.ok) {
+        // Store user data in localStorage for profile display
+        localStorage.setItem("userFullName", userFullName);
+        localStorage.setItem("userEmail", userEmail);
+        localStorage.setItem("userPhone", userPhone);
         alert("Registration successful! Please login.");
         setIsRegistering(false); // Toggle to login after successful registration
       } else {
@@ -108,10 +112,18 @@ export default function Login() {
       });
 
       const result = await response.json();
+      console.log("Login API response:", result); // Debug log
 
       if (response.ok) {
         localStorage.setItem("userToken", result.token);
-        localStorage.setItem("userFullName", result.fullName); // ✅ store name
+        localStorage.setItem("userFullName", result.fullName || result.name || ""); // Try different field names
+        localStorage.setItem("userEmail", userEmail); // Store email
+        localStorage.setItem("userPhone", result.phoneNumber || result.phone || ""); // Try different field names
+        
+        // Store only essential data in localStorage for navigation
+        localStorage.setItem("userEmail", userEmail);
+        console.log("Stored user email in localStorage for navigation:", userEmail);
+        
         alert("Login successful!");
         navigate("/profile");
       }

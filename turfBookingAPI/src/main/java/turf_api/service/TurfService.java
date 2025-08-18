@@ -40,7 +40,5 @@ public class TurfService {
 	
 	public void deleteTurf(Integer TurfId) {
 		TurfRepositoryRef.deleteById(TurfId);
-	}
-
-	
+	}	
 }
